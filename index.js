@@ -111,8 +111,8 @@ function eatFood(myBody, board) {
 
 function foodNearMe(myBody, foods) {
   foods.forEach(food => {
-    if (Math.abs(myBody.x - food.x) <= 1) {
-      if (y = Math.abs(myBody.y - food.y) <= 1) {
+    if (Math.abs(myBody[0].x - food.x) <= 1) {
+      if (y = Math.abs(myBody[0].y - food.y) <= 1) {
         return {
           x: food.x,
           y: food.y,
